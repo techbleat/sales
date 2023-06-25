@@ -1,11 +1,13 @@
 module "provision_ec2_1" {
   source = "git::https://github.com/techbleat/modules.git"
   machine_name ="Sales first machine"
+  key_name = "techbleat_2023"
 }
 
 module "provision_ec2_2" {
   source = "git::https://github.com/techbleat/modules.git"
   machine_name = "Sales second machine"
+  key_name = "test100"
 }
 
 
