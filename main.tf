@@ -1,9 +1,9 @@
-module "provision_ec2_1" {
+module "provision_ec2_11" {
   source = "git::https://github.com/techbleat/modules.git"
   machine_name ="Sales first machine"
 }
 
-module "provision_ec2_2" {
+module "provision_ec2_21" {
   source = "git::https://github.com/techbleat/modules.git"
   machine_name = "Sales second machine"
   key_name = "test100"
