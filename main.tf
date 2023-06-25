@@ -1,12 +1,12 @@
 module "provision_ec2_1" {
   source = "git::https://github.com/techbleat/modules.git"
-  machine_name ="Sales first machine"
+  machine_name =var.sales_1_machine_name
 }
 
 module "provision_ec2_2" {
   source = "git::https://github.com/techbleat/modules.git"
-  machine_name = "Sales second machine"
-  machine_key = "test100"
+  machine_name = var.sales_2_machine_name
+  machine_key = var.sales_2_key_name
 }
 
 
@@ -22,3 +22,8 @@ terraform {
 provider "aws" {
   region = "eu-west-1"
 }
+
+variable sales_1_machine_name {}
+variable sales_2_machine_name {}
+variable sales_1_key_name {}
+variable sales_2_key_name {}
