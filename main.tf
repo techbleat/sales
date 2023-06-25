@@ -1,11 +1,11 @@
 module "provision_ec2_1" {
   source = "git::https://github.com/techbleat/modules.git"
-  machine_name ="first machine"
+  machine_name ="Sales first machine"
 }
 
 module "provision_ec2_2" {
   source = "git::https://github.com/techbleat/modules.git"
-  machine_name = "second machine"
+  machine_name = "Sales second machine"
 }
 
 
