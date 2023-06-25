@@ -1,5 +1,5 @@
 module "provision_ec2" {
-    source = "git::https://github.com/techbleat/modules.git"
+  source = "git::https://github.com/techbleat/modules.git"
 }
 
 terraform {
@@ -8,6 +8,7 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 4.16"
     }
+  }
 }
 
 provider "aws" {
